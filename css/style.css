@@ -6,6 +6,7 @@
     /* overflow-x: hidden; */
     box-sizing: border-box;
     font-family: 'Sansita Swashed', cursive;
+   
     
    
 }
@@ -14,7 +15,7 @@
     display: grid;
     width: 100%;
     height: 150vw;
-    grid-template-rows: auto 1fr 1fr 1fr 200px;
+    grid-template-rows: 500px 1fr 1fr 1fr 200px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "s1"
@@ -27,6 +28,10 @@
 
 #section01{
     grid-area: s1;
+    background-image: url(../img/cropped_restaurang-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     background-color: bisque;
 }
 #section02{
@@ -49,7 +54,25 @@
 }
 footer{
     grid-area: fo;
-    background-color: darkseagreen;
+    background-color: rgb(124, 124, 124);
+    
+    
+    
+}
+footer>ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+footer>ul>li{
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    
 }
 #main_img{
     width: 100%;
@@ -61,7 +84,7 @@ footer{
 #main_banner{
     display: flex;
     border: none;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     position: fixed;
     background: rgba(235, 230, 230, 0.5);
@@ -109,4 +132,63 @@ nav{
     width: auto;
     
     
+}
+
+#grid_wrapper_meny{
+    display: grid;
+    width: 100%;
+    height: 200vh;
+    grid-template-rows: 200px, 1fr, 200px;
+    grid-template-areas: 
+    "ms"
+    "ma"
+    "fo"
+    ;
+}
+
+main{
+    grid-area: ma;
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/meny_background_2.jpg);
+    background-size: cover;
+   
+    
+    
+   
+}
+#meny_section{
+grid-area: ms;
+font-size: 100px;
+justify-content: center;
+display: flex;
+align-items: center;
+margin-top: 100px;
+background-color: tomato;
+box-shadow: 10px 0px 100px 0px rgb(116, 29, 18) inset;
+
+}
+#main_meny>ul{
+    border: solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: chocolate;
+    background-image: url(../img/plank_background.jpg);
+    background-size: cover ;
+
+   
+   
+}
+
+.meny_item{
+    border: solid;
+    margin: 10px;
+    width: 90%;
+    height: 100px;
+    list-style: none;
+    background-color: white;
+   
 }
