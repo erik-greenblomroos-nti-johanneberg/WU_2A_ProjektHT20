@@ -59,12 +59,15 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
+header{
+    font-size: 60px;
+}
 footer{
     grid-area: fo;
     background-color: rgb(124, 124, 124);
+
     
-    
-    
+
 }
 footer>ul{
     display: flex;
@@ -98,12 +101,20 @@ footer>ul>li{
     
 
 }
-
+#main_banner>div{
+    display: flex;
+    align-items: center;
+}
 nav>ul{
     display: flex;
     flex-direction: row;
     
 
+}
+#restaurang_logo{
+    width: 143px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 .meny_element{
     display: flex;
@@ -227,20 +238,41 @@ box-shadow: 10px 0px 100px 0px rgb(116, 29, 18) inset;
     grid-area: ks;
     background-image: url(../img/picture_of_food_2.jpg);
     background-size: cover ;
+    font-size: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 0px 100px 0px rgb(116, 29, 18) inset;
 
 }
-
+#kontakt_section>strong{
+    margin-top: 100px;
+}
 #main_kontakt{
     grid-area: mk;
     background-color: bisque;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
     
     
 }
 #main_kontakt>section{
-margin-top: 100px;
+margin-bottom: 400px;
 }
 .kontakt_element{
 margin-top: 20px;
 }
+#kontakt_location{
+    height: 543px;
+    width: 471px;
+   
+}
+strong{
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
